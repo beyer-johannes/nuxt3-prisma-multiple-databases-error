@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "db:generate": "pnpm prisma generate --schema=./server/datasources/first/schema.prisma && pnpm prisma generate --schema=./server/datasources/second/schema.prisma"
+  },
+  "devDependencies": {
+    "nuxt": "3.0.0-rc.5"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.0.0",
+    "prisma": "^4.0.0"
+  }
+}

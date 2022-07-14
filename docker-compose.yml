@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  mysql:
+    image: mysql:8
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_USE=test
+      - MYSQL_PASSWORD=test
+      - MYSQL_DATABASE=test
+      - MYSQL_ROOT_PASSWORD=root
+  auth:
+    image: mysql:8
+    ports:
+      - "3307:3306"
+    environment:
+      - MYSQL_USE=test
+      - MYSQL_PASSWORD=test
+      - MYSQL_DATABASE=test
+      - MYSQL_ROOT_PASSWORD=root
